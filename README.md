@@ -19,3 +19,35 @@ Make CSS variables, change spacing, blur, and color
 ## Day-4 
 
 Cool array functions of filter, map, reduce, and sort
+
+## Day-5
+
+Flex and Flex Items https://flexbox.io/
+
+```
+    /* Flex Children */
+    .panel > * {
+    }
+
+    .panel > *:first-child {
+      transform: translateY(-100%);
+    }
+
+    .panel > *:last-child {
+      transform: translateY(100%);
+    }
+
+```
+
+Toggle effect when transition end 
+
+```
+function toggleActive(e) {
+      console.log(e.propertyName);
+      // if (e.propertyName === 'flex-grow') {
+      if (e.propertyName.includes('flex')) {
+        this.classList.toggle('open-active')
+      }
+    }
+panels.forEach(panel => panel.addEventListener('transitionend', toggleActive))
+```
