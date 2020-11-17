@@ -10,7 +10,7 @@ Data-key, keycode, and audio tag
 
 ## Day-2
 
-CSS transform rotate degrees, setInterval, and use new Date() method to get current time
+CSS transform rotate degrees, setInterval, and use `new Date()` method to get current time
 
 ## Day-3 
 
@@ -18,7 +18,7 @@ Make CSS variables, change spacing, blur, and color
 
 ## Day-4 
 
-Cool array functions of filter, map, reduce, and sort
+Cool array functions of `filter`, `map`, `reduce`, and `sort`
 
 ## Day-5
 
@@ -50,4 +50,29 @@ function toggleActive(e) {
       }
     }
 panels.forEach(panel => panel.addEventListener('transitionend', toggleActive))
+```
+
+## Day-6
+
+show search results while typing
+
+regular express `RegExp`:
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp
+
+## Day-7
+
+more array phototypes of `some`, `every`, `find`, `findIndex`, `splice`, `slice`
+
+```
+    // Some and Every Checks
+    // Array.prototype.some() // is at least one person 19 or older?
+    const isAdult = people.some(person => {
+      const currentYear = (new Date()).getFullYear()
+      return currentYear - person.year >= 19
+    })
+    console.log({isAdult});
+
+    // Array.prototype.every() // is everyone 19 or older?
+    const everyAdult = people.every(person => (new Date()).getFullYear() - person.year >= 19)
+    console.log({everyAdult});
 ```
