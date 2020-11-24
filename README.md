@@ -76,3 +76,19 @@ more array phototypes of `some`, `every`, `find`, `findIndex`, `splice`, `slice`
     const everyAdult = people.every(person => (new Date()).getFullYear() - person.year >= 19)
     console.log({everyAdult});
 ```
+
+## Day-8
+
+Draw rainbow line in Cavas
+
+```
+  const canvas = document.querySelector('#draw')
+  const ctx = canvas.getContext('2d')
+  canvas.width = window.innerWidth
+  canvas.height = window.innerHeight
+  ctx.strokeStyle = 'blue'
+  ctx.lineJoin = 'round'
+  ctx.lineCap = 'round'
+  ctx.lineWidth = '50'
+  ctx.globalCompositeOperation = 'screen'
+```
