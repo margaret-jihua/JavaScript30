@@ -79,7 +79,7 @@ more array phototypes of `some`, `every`, `find`, `findIndex`, `splice`, `slice`
 
 ## Day-8
 
-Draw rainbow line in Cavas
+Draw rainbow line in Cavas by mouse
 
 ```
   const canvas = document.querySelector('#draw')
@@ -91,4 +91,22 @@ Draw rainbow line in Cavas
   ctx.lineCap = 'round'
   ctx.lineWidth = '50'
   ctx.globalCompositeOperation = 'screen'
+```
+
+## Day-9
+
+Dev tool tricks
+
+```
+console.log('$s')
+console.log('$c')
+console.warn()
+console.error()
+console.info()
+console.assert(1===0, 'This is wrong')
+console.clear()
+console.log(document.querySelector('p'))
+console.dir(...)
+console.count()
+console.table()
 ```
