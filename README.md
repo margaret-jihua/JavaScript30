@@ -110,3 +110,30 @@ console.dir(...)
 console.count()
 console.table()
 ```
+
+## Day 10
+
+hold shift and select checkboxes
+
+```
+let lastChecked
+
+  function handleCheck(e) {
+    let inBetween = false
+    // check if shift key is down
+    // check if checking it
+    if (e.shiftKey && this.checked) {
+      checkBoxes.forEach(checkBox => {
+        if (checkBox === this || checkBox === lastChecked) {
+          inBetween = !inBetween
+          console.log("change inBetween value");
+        }
+        if (inBetween) {
+          checkBox.checked = true
+        }
+      })
+    }
+    lastChecked = this
+
+  }
+  ```
